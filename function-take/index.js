@@ -91,9 +91,9 @@ const squareAdd = fmap2(square, add);
 
 const bind = (fn, context) => {
     return (...args) => {
-        // console.log(args);
-        // console.log(fn);
-        // console.log(context);
+        console.log(args);
+        console.log(fn);
+        console.log(context);
         return fn.apply(context, [...args]);
     }
 }
@@ -106,7 +106,7 @@ const testThis = function (a) {
 
 const boundFunction = bind(testThis, ctx);
 // testThis(5)
-// boundFunction(100);
+boundFunction(100);
 
 
 
