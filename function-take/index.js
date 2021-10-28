@@ -82,7 +82,29 @@ const squareAdd = fmap2(square, add);
 
 // 5. Partial
 
+const partical = (fn, ...particalArgs) => {
+    return function (...args) {
+        return fn.apply(this, particalArgs.concat(args));
+    };
+}
 
+const addPartical = (...args) => {
+    let sum = 0;
+    args.map((element) => (sum += element));
+    return sum;
+}
+
+const multPartical = (...args) => {
+    let multResult = 1;
+    args.map((element) => (multResult *= element));
+    return multResult;
+}
+
+const add5 = partical(addPartical, 5);
+const mult23 = partical(multPartical, '1', 2, 3)
+
+console.log(add5(2));
+console.log(mult23(9));
 
 // 6.
 
