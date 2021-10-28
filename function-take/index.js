@@ -80,11 +80,13 @@ const squareAdd = fmap2(square, add);
 
 
 
-// 5. Partical
+// 5. Partial
 
 
 
 // 6.
+
+
 
 
 // 7. Bind - google +
