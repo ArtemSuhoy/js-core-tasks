@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+}
+tr{
+    width: 100%;
+}
+
+td{
+    border: 1px solid #000;
+    width: 28px;
+    height: 28px;
+}
+table{
+    margin: 0px;
+}
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper > table {
+    margin: 20px auto;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
